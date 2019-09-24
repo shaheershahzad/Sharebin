@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ValidationsService } from '../../services/validations.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,10 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private route: Router) {
+  constructor(
+    private route: Router,
+    private validator: ValidationsService
+  ) {
 
   }
 
@@ -18,5 +22,4 @@ export class LoginComponent implements OnInit {
   goHome() {
     this.route.navigateByUrl('/home');
   }
-
 }

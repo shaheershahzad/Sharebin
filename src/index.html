@@ -1,14 +1,39 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Sharebin</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+    <meta charset="utf-8">
+    <title>Sharebin</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAMMVNHvzaXFjRfImWsYVo0nyRQu-RqlHQ",
+            authDomain: "sharebin-3c453.firebaseapp.com",
+            databaseURL: "https://sharebin-3c453.firebaseio.com",
+            projectId: "sharebin-3c453",
+            storageBucket: "",
+            messagingSenderId: "351964725410",
+            appId: "1:351964725410:web:fac25256c447d2830b97fb"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 </head>
+
 <body>
-  <app-root></app-root>
+    <app-root></app-root>
 </body>
+
 </html>
