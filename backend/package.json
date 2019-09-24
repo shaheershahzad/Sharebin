@@ -26,7 +26,8 @@
     },
     "devDependencies": {
         "eslint": "^3.17.1",
-        "eslint-config-loopback": "^8.0.0"
+        "eslint-config-loopback": "^8.0.0",
+        "swagger-ui": ">=3.18.0"
     },
     "repository": {
         "type": "",
