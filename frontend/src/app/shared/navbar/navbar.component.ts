@@ -18,7 +18,7 @@ export class NavbarComponent implements OnInit {
     this.navbarSelectorService.setNavbarSelector(val);
   }
 
-  
+
   getSelection(): string {
     return this.navbarSelection;
   }
