@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  sharebinLogo = "../../../assets/ShareBin_Logo.png";
+
   constructor(private route: Router) {
 
   }
