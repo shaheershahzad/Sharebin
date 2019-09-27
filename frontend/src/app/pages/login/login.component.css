@@ -1,7 +1,3 @@
-html, body {
-    background-color: red;
-}
-
 @keyframes float {
     0% {
         transform: translatey(0px);
