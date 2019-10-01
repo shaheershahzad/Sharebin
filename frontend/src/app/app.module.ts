@@ -8,6 +8,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { MaincontainerComponent } from './pages/maincontainer/maincontainer.component';
 import { MetadataComponent } from './pages/metadata/metadata.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,9 @@ import { MetadataComponent } from './pages/metadata/metadata.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

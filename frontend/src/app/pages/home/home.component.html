@@ -1,18 +1,21 @@
-<div>
+<div class="outline h-100">
     <h2>Inicio</h2>
 
-    <div class="d-flex row">
-        <div class="col-6 bg-light align-content-center">Aqui va la barra chula</div>
-        <button class="col-3 float-right btn btn-primary navbar-bg">Subir archivo</button>
+    <!-- Barra de búsqueda y subida de archivos -->
+    <div class="flex justify-between mt4">
+        <div class="w-70 bg-light align-content-center">Aquí va la barra chula</div>
+        <button class="w-25 btn btn-primary navbar-bg">Subir archivo</button>
     </div>
-    <div class="d-flex row h-100">
-        <div class="col-6 h-100 bg-light align-content-center">
-            <ul class="">
-                <li *ngFor="let dat of data">
-                    <span class="badge">{{dat.id}}</span> {{dat.name}}
-                </li>
-            </ul>
+
+    <!-- Listado de archivos e información -->
+    <div class="flex justify-between mt4 ">
+        <div class="w-70 bg-light align-content-center">
+            <cdk-virtual-scroll-viewport itemSize='5' class="list-container list-group">
+                <div *cdkVirtualFor="let dat of data">
+                    {{dat.id}} {{dat.name}}
+                </div>
+            </cdk-virtual-scroll-viewport>
         </div>
-        <div class="col-3 bg-light">Aqui van los datos</div>
+        <div class="w-25 bg-light">Aqui van los datos</div>
     </div>
 </div>
