@@ -2,5 +2,16 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "sharebin": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "sharebindb",
+    "password": "",
+    "name": "sharebin",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
   }
 }
