@@ -14,28 +14,32 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "sharebin"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "sharebin",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "sharebin",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "sharebin",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "sharebin",
     "public": false
   },
-  "Client": {
+  "Document": {
+    "dataSource": "sharebin",
+    "public": true
+  },
+  "Metadata": {
     "dataSource": "sharebin",
     "public": true
   }
