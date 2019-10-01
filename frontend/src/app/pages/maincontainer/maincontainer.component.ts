@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-maincontainer',
@@ -7,14 +8,20 @@ import { NavbarComponent } from '../../shared/navbar/navbar.component';
   styleUrls: ['./maincontainer.component.css']
 })
 export class MaincontainerComponent implements OnInit {
-  public navbarSelection = 'home';
+  componentToLoad = 'home';
+  sub: any;
 
-  constructor() { }
+  constructor(private router: ActivatedRoute) { }
 
   ngOnInit() {
+    this.sub = this.router
+      .data
+      .subscribe(v => {
+        this.componentToLoad = v.load;
+      });
   }
 
-  public setSelection(val: string) {
-    this.navbarSelection = val;
+  ngOnDestroy() {
+    this.sub.unsubscribe();
   }
 }

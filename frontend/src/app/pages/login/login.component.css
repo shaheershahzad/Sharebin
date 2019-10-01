@@ -1,0 +1,23 @@
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-15px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.sharebinLogo {
+    animation: float 4s ease-in-out infinite;
+}
+
+.btn {
+    background: linear-gradient(180deg, #7B68EE 0%, #00BFFF 100%);
+    border: none;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+}

@@ -1,22 +1,22 @@
-<div class="row">
+<div class="w-100 row">
     <app-navbar class="col-3"></app-navbar>
-    <span class="col-8" [ngSwitch]="navbarSelection">
-        <div *ngSwitchCase="home">
+    <span class="col-9" [ngSwitch]="componentToLoad">
+        <div *ngSwitchCase="'home'" class="container w-100 pt-5">
             <app-home></app-home>
         </div>
-        <div *ngSwitchCase="metadata">
+        <div *ngSwitchCase="'metadata'" class="container w-100 pt-5">
             <app-metadata></app-metadata>
         </div>
-        <div *ngSwitchCase="audit">
-            <!-- <app-audit></app-audit> -->
+        <!-- <div *ngSwitchCase="'audit'" class="container w-100 pt-5">
+            <app-audit></app-audit>
         </div>
-        <div *ngSwitchCase="themes">
-            <!-- <app-themes></app-themes> -->
+        <div *ngSwitchCase="'themes'" class="container w-100 pt-5">
+            <app-themes></app-themes>
         </div>
-        <div *ngSwitchCase="bin">
-            <!-- <app-bin></app-bin> -->
-        </div>
-        <div *ngSwitchDefault> 
+        <div *ngSwitchCase="'bin'" class="container w-100 pt-5">
+            <app-bin></app-bin>
+        </div> -->
+        <div *ngSwitchDefault class="container w-100 pt-5"> 
             <app-home></app-home>
         </div>
     </span>
