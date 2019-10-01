@@ -1,8 +1,17 @@
 <div class="navbar-bg vh-100">
-    <div class="d-flex flex-column p-5">
+    <div class="d-flex flex-column pa5">
         <h3 class="text-white">Sharebin</h3>
-        <button class="navbar-element" (click)="select('home')">Inicio</button>
-        <button class="navbar-element" (click)="select('metadata')">Metadata</button>
-        <button class="navbar-element" (click)="select('metadata')">Temas</button>
+        <button class="row navbar-element" (click)="select('home')">
+            <!-- <img src="./icons/home.svg" alt="home icon" > -->
+            <div>Inicio</div>
+        </button>
+        <button class="row navbar-element" (click)="select('metadata')">
+            <!-- <img src="./icons/metadata.svg" alt="metadata icon" > -->
+            <div>Metadata</div>
+        </button>
+        <button class="row navbar-element" (click)="select('themes')">
+            <!-- <img src="./icons/themes.svg" alt="themes icon" > -->
+            <div>Temas</div>
+        </button>
     </div>
 </div>
