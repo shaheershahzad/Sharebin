@@ -1,0 +1,39 @@
+{
+  "name": "Metadata",
+  "plural": "metadata",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "key": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "createDate": {
+      "type": "date",
+      "required": true,
+      "default": "$NOW"
+    },
+    "updateDate": {
+      "type": "date",
+      "required": true,
+      "default": "$NOW"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "document": {
+      "type": "belongsTo",
+      "model": "Document",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

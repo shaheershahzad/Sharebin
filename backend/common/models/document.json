@@ -1,0 +1,49 @@
+{
+  "name": "Document",
+  "plural": "documents",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string",
+      "required": true
+    },
+    "createDate": {
+      "type": "date",
+      "required": true,
+      "default": "$NOW"
+    },
+    "updateDate": {
+      "type": "date",
+      "required": true,
+      "default": "$NOW"
+    },
+    "url": {
+      "type": "string"
+    },
+    "size": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "metadatas": {
+      "type": "hasMany",
+      "model": "Metadata",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
