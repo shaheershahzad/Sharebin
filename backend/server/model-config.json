@@ -34,5 +34,13 @@
   "Role": {
     "dataSource": "sharebin",
     "public": false
+  },
+  "Document": {
+    "dataSource": "sharebin",
+    "public": true
+  },
+  "Metadata": {
+    "dataSource": "sharebin",
+    "public": true
   }
 }
