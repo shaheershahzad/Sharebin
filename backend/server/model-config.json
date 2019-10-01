@@ -14,25 +14,25 @@
     ]
   },
   "User": {
-    "dataSource": "sharebindb"
+    "dataSource": "sharebin"
   },
   "AccessToken": {
-    "dataSource": "sharebindb",
+    "dataSource": "sharebin",
     "public": false
   },
   "ACL": {
-    "dataSource": "sharebindb",
+    "dataSource": "sharebin",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "sharebindb",
+    "dataSource": "sharebin",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "sharebindb",
+    "dataSource": "sharebin",
     "public": false
   }
 }
