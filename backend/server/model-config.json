@@ -35,6 +35,10 @@
     "dataSource": "sharebin",
     "public": false
   },
+  "Client": {
+    "dataSource": "sharebin",
+    "public": true
+  },
   "Document": {
     "dataSource": "sharebin",
     "public": true
