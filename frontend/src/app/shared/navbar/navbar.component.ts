@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavbarSelectorService } from 'src/app/services/navbar-selector.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,17 +9,12 @@ import { NavbarSelectorService } from 'src/app/services/navbar-selector.service'
 export class NavbarComponent implements OnInit {
   navbarSelection: string;
 
-  constructor(private navbarSelectorService: NavbarSelectorService) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   select(val) {
-    this.navbarSelectorService.setNavbarSelector(val);
-  }
-
-
-  getSelection(): string {
-    return this.navbarSelection;
+    this.router.navigateByUrl(val);
   }
 }
