@@ -42,5 +42,9 @@
   "Metadata": {
     "dataSource": "sharebin",
     "public": true
+  },
+  "Enterprise": {
+    "dataSource": "sharebin",
+    "public": true
   }
 }
