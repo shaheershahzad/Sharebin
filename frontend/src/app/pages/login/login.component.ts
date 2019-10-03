@@ -20,8 +20,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.registerForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]],
-      acceptTerms: [false, Validators.requiredTrue]
+      password: ['', [Validators.required, Validators.minLength(6)]]
     });
   }
 
@@ -37,9 +36,9 @@ export class LoginComponent implements OnInit {
     // stop here if form is invalid
     if (this.registerForm.invalid) {
         return;
-    }else{
-      this.goHome();
     }
+    
+    this.goHome();
   }
 
   onReset() {
