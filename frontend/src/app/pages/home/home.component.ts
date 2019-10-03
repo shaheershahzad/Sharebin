@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     { id: 19, name: 'Magma' },
     { id: 20, name: 'Tornado' }
   ]; */
-  public data = Array(100).fill(0).map(()  =>  {
+  public data = Array(20).fill(0).map(()  =>  {
     return {
         id: 11,
         name: 'Dr Nice'

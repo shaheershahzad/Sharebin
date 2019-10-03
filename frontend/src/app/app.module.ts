@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { SearchbarComponent } from './shared/searchbar/searchbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     HomeComponent,
     NavbarComponent,
     MaincontainerComponent,
-    MetadataComponent
+    MetadataComponent,
+    SearchbarComponent
   ],
   imports: [
     BrowserModule,
