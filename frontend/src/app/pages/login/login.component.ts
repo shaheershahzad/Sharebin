@@ -12,6 +12,8 @@ export class LoginComponent implements OnInit {
   sharebinLogo = "../../../assets/ShareBin_Logo.png";
   registerForm: FormGroup;
   submitted = false;
+  users: string[] = ["shaheer@1", "sergio@2", "johans@3"];
+  passwords: string[] = ["shaheer", "sergio", "johans"];
 
   constructor(private route: Router, private formBuilder: FormBuilder) {
 
@@ -37,8 +39,16 @@ export class LoginComponent implements OnInit {
     if (this.registerForm.invalid) {
         return;
     }
-    
-    this.goHome();
+
+    let introducedEmail:string = this.registerForm.controls.email.value;
+    let introducedPassword:string = this.registerForm.controls.password.value;
+
+    if(this.users.includes(introducedEmail) && this.passwords.includes(introducedPassword)){
+      this.goHome();
+    }else{
+      document.getElementById("errorAlert").style.display = "block";
+      console.log("Error!");
+    }
   }
 
   onReset() {
