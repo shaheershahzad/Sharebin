@@ -43,7 +43,10 @@ export class LoginComponent implements OnInit {
     let introducedEmail:string = this.registerForm.controls.email.value;
     let introducedPassword:string = this.registerForm.controls.password.value;
 
-    if(this.users.includes(introducedEmail) && this.passwords.includes(introducedPassword)){
+    if(this.users.includes(introducedEmail) 
+      && this.passwords.includes(introducedPassword) 
+      && this.users.indexOf(introducedEmail) == this.passwords.indexOf(introducedPassword)){
+        
       this.goHome();
     }else{
       document.getElementById("errorAlert").style.display = "block";
